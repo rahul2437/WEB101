@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASAI NEWS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    #news{
+      background-color: #f2f6ff;
+      padding: 20px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    #part{
+      padding: 40px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    #news>h1{
+      font-size: 21px;
+      font-weight: 900;
+    }
+    #part>h1{
+      font-size: 21px;
+      font-weight: 900;
+    }
+    #cards{
+      display: flex;
+      margin: 30px auto;
+    }
+    .card{
+      text-align: left;
+      margin: 5px 20px;
+      padding: 10px;
+      width: 220px;
+      height: 280px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .card>img{
+      width: 200px;
+    }
+    .card>h3{
+      font-size: 13px;
+      margin: 5px 0;
+    }
+    .card>P{
+      font-size: 10px;
+    }
+    .date{
+      font-size: 10px;
+      color: #5f8ee9;
+    }
+    button{
+      color: #ef4465;
+      border: 1px solid #ef4465;
+      width: 90px;
+      height: 30px;
+      margin: 0 auto;
+      background-color: #f2f6ff;
+      border-radius: 4px;
+    }
+    #part>div>div{
+      box-shadow: none;
+      margin: 0;
+      width: 250px;
+    }
+    #part>div>div>img{
+      width: 230px;
+    }
+    </style>
+</head>
+
+<body>
+  <div id="news">
+    <h1>Masai In The News</h1>
+    <div id="cards">
+      <div class="card">
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png" alt="">
+        <p class="date">21 Dec 2021</p>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas est adipisci Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, itaque....</p>
+      </div>
+      <div class="card">
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png" alt="">
+        <p class="date">21 Dec 2021</p>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas est adipisci Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, itaque....</p>
+      </div>
+      <div class="card">
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png" alt="">
+        <p class="date">21 Dec 2021</p>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas est adipisci Lorem ipsum dolor sit.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, itaque....</p>
+      </div>
+    </div>
+    <button>SEE MORE ></button>
+  </div>
+  <div id="part">
+    <h1>Our Investors, Who Believe In Us</h1>
+    <div id="cards">
+      <div class="card">
+        <img src="https://www.masaischool.com/img/our-investors/unitus.svg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://www.masaischool.com/img/our-investors/omidyar.svg" alt="">
+      </div>
+      <div class="card">
+        <img src="https://www.masaischool.com/img/our-investors/indiaQuotient.svg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

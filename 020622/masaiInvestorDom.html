@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Investors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    
+    .divboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      padding: 10px 30px;
+      margin: 10px 20px;
+    }
+    
+    .divboard>div {
+      box-shadow: #939393 0px 2px 6px 1px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    .profile{
+      width: 100%;
+    }
+    .logo{
+      width: 60%;
+    }
+    h2{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+    @media all and (min-width: 480px) and (max-width: 720px) {
+      .divboard {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .imgboard{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .imgboard>img{
+        width: 50%;
+      }
+      h2{
+        font-size: 14px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+    
+    @media all and (max-width: 480px) {
+      .divboard {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .imgboard{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .imgboard>img{
+        width: 50%;
+      }
+      h2{
+        font-size: 14px;
+      }
+      p{
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="board">
+    <h1>Board Members</h1>
+    <div class="imgboard">
+      <img src="https://www.masaischool.com/img/our-investors/india-q-borderless.svg" alt="">
+      <img src="https://www.masaischool.com/img/our-investors/unitus-borderless.svg" alt="">
+      <img src="https://www.masaischool.com/img/our-investors/omidyar-borderless.svg" alt="">
+    </div>
+  </div>
+  <div id="strategy">
+    <h1>Strategic Investors</h1>
+    <div class="divboard">
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  let invData = [
+    {
+      name: 'Vijay Shekhar Sharma',
+      pos: 'Founder & CEO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg'
+    },
+    {
+      name: 'Kunal Shah',
+      pos: 'Founder',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png'
+    },
+    {
+      name: 'Amrish Rau',
+      pos: 'CEO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png'
+    },
+    {
+      name: 'Sampad Swain',
+      pos: 'Co-Founder & CEO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png'
+    },
+    {
+      name: 'Ankush Sachdeva',
+      pos: 'Co-Founder & CEO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg'
+    },
+    {
+      name: 'Bhanu Pratap Singh',
+      pos: 'Co-Founder & CTO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg'
+    },
+    {
+      name: 'Farid Ahsan',
+      pos: 'Co-Founder & COO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg'
+    },
+    {
+      name: 'Amit Kumar Agarwal',
+      pos: 'Founder & CEO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg'
+    },
+    {
+      name: 'Akhil Gupta',
+      pos: 'Founder & CTO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg'
+    },
+    {
+      name: 'Sourabh Garg',
+      pos: 'Co-Founder & CBO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg'
+    },
+    {
+      name: 'Vipin Pathak',
+      pos: 'Co-Founder & CEO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/care24_1164f7a2cd.png'
+    },
+    {
+      name: 'Ramakant Sharma',
+      pos: 'Founder',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png'
+    },
+    {
+      name: 'Mohit Tandon',
+      pos: 'Co-Founder',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/delhivery_17e85a76ed.png'
+    },
+    {
+      name: 'Abhishek Goyal',
+      pos: 'Co-Founder',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/tracxn_6d0c3de2ee.svg'
+    },
+    {
+      name: 'Anurag Jain',
+      pos: 'Founder & Executive Director',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/kredx_rect_204437078a.svg'
+    },
+    {
+      name: 'Harshvardhan Lunia',
+      pos: 'Co-Founder & CEO',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/lendingkart_rect_d0d30d7b53.svg'
+    },
+    {
+      name: 'Sunil Rao',
+      pos: 'Country Head Strategy and Corporate Business Development',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg'
+    },
+    {
+      name: 'Sharda Balaji',
+      pos: 'Founder',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg'
+    },
+    {
+      name: 'Kulin Shah',
+      pos: 'Co-Founder',
+      imgurl:'https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg',
+      logourl: 'https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png'
+    }
+  ]
+
+  let dispInv = document.querySelector('.divboard');
+  invData.forEach((ele)=>{
+    let profile = document.createElement('img');
+    profile.src = ele.imgurl;
+    profile.setAttribute('class','profile');
+    let name = document.createElement('h2');
+    name.innerText = ele.name;
+    let pos = document.createElement('p');
+    pos.innerText = ele.pos;
+    let logo = document.createElement('img');
+    logo.src = ele.logourl;
+    logo.setAttribute('class','logo');
+    let div = document.createElement('div');
+    div.append(profile,name,pos,logo);
+    dispInv.appendChild(div);
+  })
+</script>

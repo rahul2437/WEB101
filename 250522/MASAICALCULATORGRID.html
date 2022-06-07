@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASAI CALCULATOR GRID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    #calci{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      box-shadow: #c2c2c2 0px 0px 10px;
+      padding: 20px 10px;
+    }
+    #calci>div:nth-child(2){
+      display: grid;
+      grid-template-columns: repeat(4,50px);
+      grid-template-rows: repeat(4,50px);
+      margin: auto;
+    }
+    .disp{
+      margin: 10px auto;
+      width: 82%;
+      height: 50px;
+      box-shadow: #c2c2c2 0px 0px 10px;
+      background-color: #ffffff;
+      border-radius: 6px;
+    }
+    .keys{
+      display: flex;
+      margin: 5px;
+      box-shadow: #c2c2c2 0px 0px 10px;
+      background-color: #ffffff;
+      padding: 5px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+    .black{
+      color: #ffffff;
+      background-color: #000000;
+    }
+    .red{
+      color: #ffffff;
+      background-color: #ff0000;
+    }
+    h1{
+      margin: 10px auto;
+      width: 250px;
+      font-size: 23px;
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+  <h1>MASAI CALCULATOR</h1>
+  <div id="calci">
+    <div class="disp"></div>
+    <div>
+      <div class="keys">1</div>
+      <div class="keys">2</div>
+      <div class="keys">3</div>
+      <div class="keys black">+</div>
+      <div class="keys">4</div>
+      <div class="keys">5</div>
+      <div class="keys">6</div>
+      <div class="keys black">-</div>
+      <div class="keys">7</div>
+      <div class="keys">8</div>
+      <div class="keys">9</div>
+      <div class="keys black">X</div>
+      <div class="keys red">C</div>
+      <div class="keys">0</div>
+      <div class="keys black">=</div>
+      <div class="keys black">/</div>
+    </div>
+  </div>
+  </body>
+  </html>

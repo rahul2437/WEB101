@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIRING PARTNERS GRID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #19304b;
+      width: 40%;
+      margin: auto;
+    }
+
+    body>p {
+      text-align: center;
+      color: #747474;
+      width: 55%;
+      margin: auto;
+    }
+
+    #cards {
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: 350px;
+      gap: 30px;
+      justify-content: center;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .card {
+      box-shadow: #ececec 0 20px 10px 11px;
+      padding: 25px;
+      border-radius: 6px;
+    }
+
+    .card>h3 {
+      font-size: 15px;
+      margin: 15px 0px;
+    }
+
+    .card>h2 {
+      font-size: 24px;
+    }
+
+    .card>p:nth-child(3) {
+      color: #757575;
+      font-style: italic;
+      font-size: 11px;
+    }
+
+    .card>p:nth-child(4) {
+      color: #757575;
+      margin: 30px 0px;
+    }
+
+    button {
+      border: 1.5px solid #0f81eb;
+      color: #0f81eb;
+      font-weight: 700;
+      background-color: #ffffff;
+      width: 150px;
+      height: 40px;
+      border-radius: 4px;
+    }
+
+    #cards>.card:nth-child(2)>button {
+      background-color: #0f81eb;
+      color: #ffffff;
+    }
+
+    #cards>.card:nth-child(1)>h2:nth-child(2) {
+      color: #52bb29;
+    }
+
+    #cards>.card:nth-child(2)>h2:nth-child(2) {
+      color: #df6311;
+    }
+
+    #cards>.card:nth-child(3)>h2:nth-child(2) {
+      color: #0f81eb;
+    }
+
+    @media all and (min-width: 480px) and (max-width: 720px) {
+      #cards {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 350px);
+
+      }
+
+      h1 {
+        width: 90%;
+      }
+
+      body>p {
+        font-size: 13px;
+        width: 90%;
+      }
+    }
+
+    @media all and (max-width: 480px) {
+      #cards {
+        grid-template-columns: 300px;
+        grid-template-rows: 350px;
+      }
+
+      h1 {
+        width: 95%;
+        font-size: 18px;
+      }
+
+      body>p {
+        width: 95%;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Choose a plan that right for your business</h1>
+  <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are like
+  </p>
+  <div id="cards">
+    <div class="card">
+      <h3>Starter Plan</h3>
+      <h2>Free</h2>
+      <p>Per month</p>
+      <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+      <button>Start Now</button>
+    </div>
+    <div class="card">
+      <h3>Business Plan</h3>
+      <h2>$39.00</h2>
+      <p>Per month</p>
+      <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+      <button>Start Now</button>
+    </div>
+    <div class="card">
+      <h3>Premium Plan</h3>
+      <h2>$59.00</h2>
+      <p>Per month</p>
+      <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+      <button>Start Now</button>
+    </div>
+  </div>
+</body>

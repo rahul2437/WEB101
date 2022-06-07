@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <style>
+    *{
+      font-size: 25px;
+    }
+    #keys {
+      margin: 30px 0;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(3, 40px);
+      grid-template-rows: repeat(4, 40px);
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
+    .key{
+      width: 100%;
+      height: 100%;
+      box-shadow: #c2c2c2 0px 0px 5px 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .key:hover{
+      transform: scale(0.9);
+      box-shadow: inset #000000 0px 0px 2px 1px;
+    } 
+    #score {
+      box-shadow: #c2c2c2 0px 0px 10px;
+      background-color: #ffffff;
+      border-radius: 6px;
+      padding: 10px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-row: 2/3;
+      grid-column: 1/3;
+    }
+
+    #min {
+      box-shadow: #c2c2c2 0px 0px 10px;
+      background-color: #eb3939;
+      border-radius: 6px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    #max {
+      box-shadow: #c2c2c2 0px 0px 10px;
+      background-color: #44cc22;
+      border-radius: 6px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #disp {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      width: 300px;
+      margin: auto;
+    }
+
+    #enter {
+      width: 100px;
+      height: 40px;
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 20px;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #enter:hover{
+      transform: scale(1.4);
+      box-shadow: inset #ffffff 0px 0px 2px 1px;
+    } 
+  </style>
+</head>
+
+<body>
+  <div id="board">
+    <div id="disp">
+      <div id="min"></div>
+      <div id="max"></div>
+      <div id="score"></div>
+    </div>
+    <div id="keys">
+      <div class="key">1</div>
+      <div class="key">2</div>
+      <div class="key">3</div>
+      <div class="key">4</div>
+      <div class="key">5</div>
+      <div class="key">6</div>
+      <div class="key">7</div>
+      <div class="key">8</div>
+      <div class="key">9</div>
+      <div></div>
+      <div class="key">0</div>
+      <div></div>
+    </div>
+    <div id="enter">Enter</div>
+  </div>
+</body>
+
+</html>
+<script>
+  let scoArr=[];
+  let disp = document.getElementById('score');
+  document.querySelectorAll('#keys>.key').forEach((el) => {
+    el.addEventListener('click', score);
+  });
+  document.getElementById('enter').addEventListener('click',(e)=>{
+    check(disp.innerText);
+    disp.innerText = '';
+  });
+  function check(a){
+    scoArr.push(a);
+    document.getElementById('min').innerText = Math.min(...scoArr);
+    document.getElementById('max').innerText = Math.max(...scoArr);
+  }
+  function score(event) {
+    let el = event.target;
+    disp.innerText += el.innerText;
+  }
+
+</script>

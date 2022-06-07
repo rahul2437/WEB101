@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRICING LAYOUT</title>
+    <style>
+      #heading h1{
+        width: 450px;
+        margin: auto;
+        text-align: center;
+      }
+      #heading p{
+        width: 500px;
+        margin: 10px auto;
+        text-align: center;
+        color: #606060;
+      }
+      #cards-section{
+        display: flex;
+        width: 800px;
+        text-align: center;
+        margin: 40px auto;
+      }
+      #cards-section > div{
+        padding: 15px;
+        margin: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+      #cards-section > div h1{
+        line-height: 0;
+      }
+      #cards-section > div h2{
+        margin-bottom: 30px;
+      }
+      h2+h1+p{
+        font-style: italic;
+      }
+      p+p{
+        line-height: 20px;
+      }
+      #cards-section > div:first-child > h1{
+        color: green;
+      }
+      #cards-section > div:last-child > h1{
+        color: blue;
+      }
+      #cards-section > div:nth-child(2) > h1{
+        color: goldenrod;
+      }
+      button{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(101, 45, 230);
+        border: 1px solid rgb(52, 43, 226);
+        border-radius: 10px;
+        width: 170px;
+        height: 50px;
+        margin-top: 40px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <!-- Cards section -->
+    <div id="cards-section">
+      <!-- This section should contain 3 children divs, each div should have h2,h1,p,p,button -->
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.</p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>$39.00</h1>
+        <p>Per month</p>
+        <p>We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.</p>
+        <button>Start Now</button>
+      </div>
+      <div>
+          <h2>Starter Plan</h2>
+          <h1>$59.00</h1>
+          <p>Per month</p>
+          <p>We collect reviews from our users so you can get an honest opinion of
+            what an experience with our website.</p>
+          <button>Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>

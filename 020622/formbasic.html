@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM SUBMIT BASIC DOM</title>
+</head>
+<style>
+  #data{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+  }
+</style>
+<body>
+  <div>
+    <form id="data">
+      <input id="name" type="text" placeholder="Name">
+      <input id="age" type="number" placeholder="Age">
+      <select id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <input id="email" type="email" placeholder="Email">
+      <input id="phone" type="number" placeholder="Mobile Number">
+      <input type="submit">
+    </form>
+  </div>
+</body>
+</html>
+<script>
+  let data = document.getElementById('data');
+  data.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    let name = document.getElementById('name').value;
+    let age = document.getElementById('age').value;
+    let gender = document.getElementById('gender').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('phone').value;
+    let user = [name,age,gender,email,phone];
+    console.log(user);
+  });
+</script>

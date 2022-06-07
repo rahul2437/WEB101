@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check your BMI</title>
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px
+    }
+    #disp{
+      padding: 10px;
+      border: 1px solid #b8b8b8;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Check your BMI</h1>
+  <p>Enter Weight and Height below</p>
+  <div class="ips">
+    <input id="W" type="number" placeholder="Weight in KG">
+    <input id="H" type="number" placeholder="Height in CM">
+  </div>
+  <button onclick="calc()">CALCULATE</button>
+  <div id="disp"></div>
+</body>
+
+</html>
+<script>
+  function calc(){
+    let w = document.getElementById('W').value;
+    let h = document.getElementById('H').value;
+    let BMI = w/((h*h)*0.0001);
+    BMI = BMI.toFixed(2);
+    var ans = '';
+    if(BMI<=18.4) ans = `Your BMI is ${BMI} which means you are Underweight`
+    else if(BMI<=25.9&&BMI>=18.5) ans = `Your BMI is ${BMI} which means you are Normal Weight`
+    else if(BMI<=29.9&&BMI>=25) ans = `Your BMI is ${BMI} which means you are Overweight`
+    else if(BMI>=30) ans = `Your BMI is ${BMI} which means you are Obese`
+    else ans = '';
+    document.getElementById('disp').innerText = ans;
+  }
+</script>

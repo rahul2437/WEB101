@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-I DRIVING AGE CHECK</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 100px 0;
+      gap: 20px;
+    }
+    #disp{
+      width: 200px;
+      box-shadow: #7a7a7a 0px 2px 5px 1px;
+      border-radius: 3px;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input id="catch" type="text" placeholder="Enter your Age">
+    <button onclick="check()">Check</button>
+  </div>
+  <p id="disp"></p>
+</body>
+</html>
+<script>
+  console.log('hello!!');
+  function check(){
+    var age = document.getElementById('catch').value;
+    if(age==18) document.getElementById('disp').innerHTML = 'You are just old enough to drive in India!';
+    else if(age<18) document.getElementById('disp').innerHTML = 'You can`t drive in India';
+    else document.getElementById('disp').innerHTML = 'You can drive in India!';
+    document.getElementById('catch').value = '';
+  }
+</script>

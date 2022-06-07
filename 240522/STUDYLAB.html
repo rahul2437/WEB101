@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDY LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    #navbar{
+      height: 50px;
+      display: flex;
+      box-shadow: rgb(0 0 0 / 15%) 0px 1px 10px;
+      justify-content: space-between;
+    }
+    .logo{
+      background: rgb(203,76,231);
+      background: linear-gradient(145deg, rgba(203,76,231,1) 6%, rgba(43,128,228,1) 100%);
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 800;
+      padding: 8px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+    }
+    .nav-items{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-right: 160px;
+    }
+    .item{
+      margin: 0 15px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+
+    #container{
+      display: flex;
+    }
+    #container>div{
+      width: 50%;
+      padding: 20px 40px;
+    }
+    .video{
+      display: flex;
+      align-items: center;
+    }
+    .video>p{
+      margin: 0 15px;
+    }
+    #cards{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card{
+      width: 40%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin: 15px;
+      height: 230px;
+      padding: 25px;
+      border-radius: 10px;
+    }
+    .card>img{
+      border-radius: 50%;
+    }
+    .card>h3{
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 50px;
+      margin-top: -15px;
+    }
+    .card>p{
+      color: #aaaaaa;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    #left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #left>h3{
+      color: #5e93fd;
+      font-size: 13px;
+      margin: 10px 0;
+    }
+    #left>h1{
+      color: #333333;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    #left>p{
+      color: #aaaaaa;
+      font-size: 12px;
+      font-weight: 500;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <div class="logo">StudyLab</div>
+    <div class="nav-items">
+      <div class="item" style="color: #699afd;">Home</div>
+      <div class="item">About</div>
+      <div class="item">Course</div>
+      <div class="item">Instructor</div>
+      <div class="item">Blog</div>
+      <div class="item">Contact</div>
+    </div>
+  </div>
+  <div id="container">
+    <div id="left">
+      <h3>WELCOME TO STUDYLAB</h3>
+      <h1>We Are StudyLab An Online Learning Center</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum reprehenderit facere fuga, corporis numquam sunt natus architecto expedita quam quas, soluta explicabo. Sed vero nemo, vitae aperiam quidem possimus eveniet itaque esse, non, quia molestias. Rem molestias rerum nisi eligendi!</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In a laudantium facere maiores et. Nulla voluptatibus deserunt, laboriosam numquam tenetur alias amet dignissimos, eum error quo nihil, magnam hic ab? Exercitationem, dolorem. Minus voluptatibus nobis impedit doloremque fuga nihil tenetur reprehenderit libero, animi blanditiis molestiae.</p>
+      <div class="video">
+        <img src="https://via.placeholder.com/140X80" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </div>
+    <div id="right">
+      <div id="cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/50" alt="">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis debitis veritatis!</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/50" alt="">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis debitis veritatis!</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/50" alt="">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis debitis veritatis!</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/50" alt="">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perspiciatis debitis veritatis!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

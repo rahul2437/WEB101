@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MQ LAYOUT - 2</title>
+  <style>
+    #nav {
+      width: 100%;
+      height: 80px;
+      background-color: yellow;
+      margin: 20px 0;
+    }
+
+    #boxes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 20em;
+      gap: 100px;
+    }
+
+    #boxes>div,
+    #nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #boxes>div:nth-child(1) {
+      background-color: red;
+    }
+
+    #boxes>div:nth-child(2) {
+      background-color: green;
+    }
+
+    #boxes>div:nth-child(3) {
+      background-color: skyblue;
+    }
+
+    #boxes>div:nth-child(4) {
+      background-color: gray;
+    }
+
+    @media all and (min-width: 480px) and (max-width: 720px) {
+      #boxes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);
+
+      }
+      #boxes>div:nth-child(1) {
+      }
+      #boxes>div:nth-child(2) {
+        order: 2;
+      }
+      #boxes>div:nth-child(3) {
+        order: 1;
+      }
+      #boxes>div:nth-child(4) {
+        order: 3;
+      }
+    }
+
+    @media all and (max-width: 480px) {
+      #boxes {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 300px);
+        gap:10px
+      }
+      #boxes>div:nth-child(1) {
+      }
+      #boxes>div:nth-child(2) {
+        order: 2;
+      }
+      #boxes>div:nth-child(3) {
+        order: 3;
+      }
+      #boxes>div:nth-child(4) {
+        order: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav">Navigation</div>
+  <div id="boxes">
+    <div>Box 1</div>
+    <div>Box 2</div>
+  </div>
+</body>
+
+</html>

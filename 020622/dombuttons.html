@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons</title>
+  <style>
+    button{
+      font-size: 25px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 2px;
+    }
+    </style>
+</head>
+<body>
+  <div id="buttons">
+  </div>
+</body>
+</html>
+<script>
+  let primary = ['#ffffff','#037bff','Primary'];
+  let secondary = ['#ffffff','#6c757d','Secondary'];
+  let success = ['#ffffff','#28a744','Success'];
+  let danger = ['#ffffff','#dc3444','Danger'];
+  let warning = ['#242729','#ffc006','Warning'];
+  let info = ['#ffffff','#15a2b8','Info'];
+  let light = ['#242729','#f8f9fa','Light'];
+  let dark = ['#ffffff','#343a40','Dark'];
+  let link = ['#037cff','#ffffff','Link'];
+  let cl = {
+    0: primary,
+    1: secondary,
+    2: success,
+    3: danger,
+    4:warning,
+    5:info,
+    6:light,
+    7:dark,
+    8:link
+  }
+  let div = document.getElementById('buttons');
+  console.log(div);
+  for(let i=0;i<9;i++){
+    let but = document.createElement('button');
+    but.style.color = cl[i][0]
+    but.style.backgroundColor = cl[i][1];
+    but.innerText = cl[i][2];
+    div.appendChild(but);
+  }
+</script>

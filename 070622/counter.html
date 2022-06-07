@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter LS</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+</style>
+<body>
+  <h1 id="DISP"></h1>
+  <div>
+    <button id="inc">Increase</button>
+    <button id="dec">Decrease</button>
+  </div>
+</body>
+</html>
+<script>
+  let counter = localStorage.getItem('localCount') || 0;
+  document.querySelector('#DISP').innerText = counter;
+  
+  document.querySelector('#inc').addEventListener('click',()=>{
+    counter++;
+    document.querySelector('#DISP').innerText = counter;
+    localStorage.setItem('localCount',counter);
+  });
+  document.querySelector('#dec').addEventListener('click',()=>{
+    counter--;
+    document.querySelector('#DISP').innerText = counter;
+    localStorage.setItem('localCount',counter);
+  });
+</script>

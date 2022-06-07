@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASAI NAVBAR</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    #navbar{
+      display: flex;
+      width: 1300px;
+      margin: 20px auto;
+      justify-content: center;
+    }
+    #navbar>div{
+      margin: 0 20px;
+    }
+    #logo{
+      width: 100px;
+    }
+    #content{
+      display: flex;
+    }
+    #content>div{
+      width: 110px;
+      margin: auto 0px;
+    }
+    .excep{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    #content>div>p{
+      margin: auto 5px;
+      font-size: 13px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .hand{
+      width: 20px;
+      height: 20px;
+    }
+    #login>button{
+      width: 100px;
+      height: 50px;
+      color: #f02850;
+      border: 1px solid #f02850;
+      background-color: #ffffff;
+      border-radius: 6px;
+    }
+    select{
+      border: none;
+    }
+    .colorb{
+      background-color: #f2fdff;
+      color: #7e71cd;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <div id="logo">
+      <div>
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+      </div>
+    </div>
+    <div id="content">
+      <div class="excep">
+        <p>COURSES</p>
+        <select></select>
+      </div>
+      <div>
+        <p>FEES & ISA</p>
+      </div>
+      <div>
+        <p>ABOUT US</p>
+      </div>
+      <div>
+        <p>HIRE FROM US</p>
+      </div>
+      <div>
+        <p>FAQ</p>
+      </div>
+      <div>
+        <p>EVENTS</p>
+      </div>
+      <div class="colorb excep" style="width: 160px; height: 30px;">
+        <p>REFER & EARN</p>
+        <img class="hand" src="https://www.masaischool.com/img/referral/hand.png" alt="">
+      </div>
+    </div>
+    <div id="login">
+      <button>LOGIN</button>
+    </div>
+  </div>
+</body>
+</html>

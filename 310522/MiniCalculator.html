@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Calculator</title>
+  <style>
+    #enter{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    #opera{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    #ans{
+      display: inline-block;
+      box-shadow: #7a7a7a 0px 2px 5px 1px;
+      border-radius: 3px;
+      padding: 10px;
+      text-align: center;
+      margin: 20px 50%;
+    }
+  </style>
+</head>
+<body>
+  <div id="enter">
+    <input type="number" placeholder="Enter 1st Number" id="n1">
+    <input type="number" placeholder="Enter 2nd Number" id="n2">
+  </div>
+  <div id="opera">
+    <button onclick="add()" id="add">Add</button>
+    <button onclick="sub()" id="sub">Subtract</button>
+    <button onclick="mul()" id="mul">Multiply</button>
+    <button onclick="div()" id="div">Divide</button>
+  </div>
+  <div id="ans"></div>
+</body>
+<script>
+  function add(){
+    var a = document.getElementById('n1').value;
+    var b = document.getElementById('n2').value;
+    document.getElementById('ans').innerText = parseFloat(a)+parseFloat(b);
+  }
+  function sub(){
+    var a = document.getElementById('n1').value;
+    var b = document.getElementById('n2').value;
+    document.getElementById('ans').innerText = parseFloat(a)-parseFloat(b);
+  }
+  function mul(){
+    var a = document.getElementById('n1').value;
+    var b = document.getElementById('n2').value;
+    document.getElementById('ans').innerText = parseFloat(a)*parseFloat(b); 
+  }
+  function div(){
+    var a = document.getElementById('n1').value;
+    var b = document.getElementById('n2').value;
+    document.getElementById('ans').innerText = parseFloat(a)/parseFloat(b);
+  }
+</script>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>periodic_table</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .block{
+      height: 35px;
+      width: 35px;
+      margin: 5px;
+      text-align: center;
+      padding: 5px;
+    }
+    #cont1{
+      /* border: 1px solid black; */
+      display: flex;
+      width: 840px;
+      margin: auto;
+    }
+    #cont2{
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      width: 485px;
+      margin: auto;
+    }
+    .g13,.g42,.g18{
+      /* border: 1px solid black; */
+    }
+    .g13{
+      width: 858px;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .green{
+      border: 1px solid black;
+      background-color: green;
+    }
+    .peach{
+      border: 1px solid black;
+      background-color: palevioletred;
+    }
+    .blue{
+      border: 1px solid black;
+      background-color: navy;
+    }
+    .orange{
+      border: 1px solid black;
+      background-color: orange;
+    }
+    .pink{
+      border: 1px solid black;
+      background-color: purple;
+    }
+    .red{
+      border: 1px solid black;
+      background-color: red;
+    }
+    .yellow{
+      border: 1px solid black;
+      background-color: yellow;
+    }
+    .odd{
+      border: 1px solid black;
+      background-color: dimgrey;
+    }
+    .lat{
+      border: 1px solid black;
+      background-color: rgb(0, 56, 0);
+    }
+    .acti{
+      border: 1px solid black;
+      background-color: rgb(82, 255, 47);
+    }
+    .bigbod{
+      border: 4px solid black;
+      color: beige;
+    }
+    h3{
+      text-align: center;
+    }
+    .p6l,.p7a{
+      display: flex;
+    }
+    .p6l div,.p7a div{
+      margin: 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>THE PERIODIC TABLE OF ELEMENTS</h3>
+    <div id="cont1">
+      <div class="g13">
+        <div class="block red"> H </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block yellow"></div>
+        <div class="block green"></div>
+        <div class="block peach"> 4 </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block pink"></div>
+        <div class="block green"></div>
+        <div class="block green"></div>
+        <div class="block green"></div>
+        <div class="block red"></div>
+        <div class="block yellow"></div>
+        <div class="block green"></div>
+        <div class="block peach"> 12 </div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block orange"></div>
+        <div class="block pink"></div>
+        <div class="block green"></div>
+        <div class="block green"></div>
+        <div class="block red"></div>
+        <div class="block yellow"></div>
+        <div class="block green"></div>
+        <div class="block peach"> 20 </div>
+        <div class="block"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block orange"></div>
+        <div class="block pink"></div>
+        <div class="block pink"></div>
+        <div class="block green"></div>
+        <div class="block red"></div>
+        <div class="block yellow"></div>
+        <div class="block green"></div>
+        <div class="block peach"> 38 </div>
+        <div class="block"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block orange"></div>
+        <div class="block orange"></div>
+        <div class="block pink"></div>
+        <div class="block pink"></div>
+        <div class="block red"></div>
+        <div class="block yellow"></div>
+        <div class="block green"></div>
+        <div class="block peach"> 56 </div>
+        <div class="block bigbod"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block orange"></div>
+        <div class="block orange"></div>
+        <div class="block orange"></div>
+        <div class="block pink"></div>
+        <div class="block red"></div>
+        <div class="block yellow"></div>
+        <div class="block green"></div>
+        <div class="block peach"> 88 </div>
+        <div class="block bigbod"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block blue"></div>
+        <div class="block odd"></div>
+        <div class="block odd"></div>
+        <div class="block odd"></div>
+        <div class="block odd"></div>
+        <div class="block odd"></div>
+        <div class="block odd"></div>
+      </div>
+    </div>
+    <div id="cont2">
+      <div class="p6l">
+        <div class="block lat">La</div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+        <div class="block lat"></div>
+      </div>
+      <div class="p7a">
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti">Am</div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti"></div>
+        <div class="block acti">No</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Practise Selectors</title>
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+        <hr/>
+        <button>Change H1</button>
+        <button>Change H3</button>
+        <button>Change H5</button>
+        <button>Change Green</button>
+        <button>Change Red</button>
+        <button>Change Blue</button>
+        <script>
+        </script>
+    </body>
+</html>
+<script>
+  document.querySelector('button:nth-child(15)').addEventListener('click',()=>{
+    document.querySelector('h1').style.color = 'red';
+  });
+  document.querySelector('button:nth-child(16)').addEventListener('click',()=>{
+    document.querySelectorAll('h3').forEach((el)=>{
+      el.style.color = 'green';
+    });
+  });
+  document.querySelector('button:nth-child(17)').addEventListener('click',()=>{
+    document.querySelectorAll('h5').forEach((el)=>{
+      el.style.color = 'blue';
+    });
+  });
+  document.querySelector('button:nth-child(18)').addEventListener('click',()=>{
+    let y = document.getElementsByClassName('green');
+    for(let i in y){
+      y[i].style.color = 'green';
+    }
+  });
+  document.querySelector('button:nth-child(19)').addEventListener('click',()=>{
+    let y = document.getElementsByClassName('red');
+    for(let i in y){
+      y[i].style.color = 'red';
+    }
+  });
+  document.querySelector('button:nth-child(20)').addEventListener('click',()=>{
+    let y = document.getElementsByClassName('blue');
+    for(let i in y){
+      y[i].style.color = 'blue';
+    }
+  });
+  // .addEventListener('click',()=>{
+  //   document.querySelectorAll('h1').style.color = 'red';
+  // });
+</script>

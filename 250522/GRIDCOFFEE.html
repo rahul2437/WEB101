@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRID COFFEE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    #menu{
+      display: grid;
+      grid-template-columns: repeat(3,350px);
+      grid-template-rows: repeat(3,160px);
+      justify-content: center;
+
+    }
+    .item{
+      border-radius: 8px;
+      box-shadow: #f1e9e2 0px 8px 24px, #f1e9e2 0px 16px 56px, #f1e9e2 0px 24px 80px;
+      margin: 20px;
+      padding: 20px 30px;
+      background-color: #ffffff;
+      display: grid;
+      grid-template-areas: "a b"
+                           "c c";
+    }
+    .item>h2{
+      font-size: 15px;
+    }
+    .item>p{
+      grid-area: c;
+      font-size: 12px;
+    }
+    .item>h2:nth-child(1){
+      grid-area: a;
+    } 
+    .item>h2:nth-child(2){ 
+      grid-area: b;
+      color: #b68837;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <div class="item">
+      <h2>Cappuccino</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Americano</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Espresso</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Macchiato</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Mocha</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Coffee Latte</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Piccolo Latte</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Ristretto</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+    <div class="item">
+      <h2>Affogato</h2>
+      <h2>$49</h2>
+      <p>Usage of the Internet is becoming more common due to rapid advance</p>
+    </div>
+  </div>
+</body>
+</html>

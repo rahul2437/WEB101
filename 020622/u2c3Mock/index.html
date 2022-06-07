@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2C3 Mock</title>
+    <style>
+      #report{
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+      }
+      #report>div{
+        box-shadow: #adadad 0px 0px 2px 3px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <select id="month">
+        <option value="January">JANUARY</option>
+        <option value="February">FEB</option>
+        <option value="MARCH">MARCH</option>
+        <option value="APRIL">APRIL</option>
+        <option value="MAY">MAY</option>
+        <option value="JUNE">JUNE</option>
+        <option value="JULY">JULY</option>
+        <option value="AUGUST">AUGUST</option>
+        <option value="SEPETEMBER">SEPETEMBER</option>
+        <option value="OCTOBER">OCTOBER</option>
+        <option value="NOVEMBER">NOVEMBER</option>
+        <option value="DECEMBER">DECEMBER</option>
+      </select>
+
+      <input id="income" type="number" placeholder="Enter Income" />
+
+      <input id="expense" type="number" placeholder="Enter expense" />
+
+      <input type="submit" />
+    </form>
+
+    <div id="report">
+          <!-- Append your cards here -->
+    </div>
+  </body>
+</html>
+
+<script>
+  let form = document.getElementsByTagName('form')[0];
+  let report = document.getElementById('report');
+  form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    let mon = document.getElementById('month').value;
+    let inc = parseInt(document.getElementById('income').value);
+    let exp = parseInt(document.getElementById('expense').value);
+    let div = document.createElement('div');
+    let h1 = document.createElement('h1');
+    let incp = document.createElement('p');
+    let expp = document.createElement('p');
+    let sta = document.createElement('h3');
+    h1.innerText = mon;
+    incp.innerText = inc;
+    expp.innerText = exp;
+    console.log(typeof inc, typeof exp);
+    if(inc==exp) {
+      sta.innerText = 'Break';
+      div.style.backgroundColor = '#ffff66';
+    }
+    else if(inc<exp) {
+      sta.innerText = 'Debt';
+      div.style.backgroundColor = '#ff4d4d';
+    }
+    else {
+      sta.innerText = 'Saving';
+      div.style.backgroundColor = '#85e085';
+    }
+    let del = document.createElement('button');
+    del.innerText = 'Delete';
+    del.setAttribute('onclick','deleteRow(this)');
+    del.setAttribute('class','delbtn');
+    div.append(h1,incp,expp,sta,del);
+    report.appendChild(div);
+  });
+  function deleteRow(btn) {
+    console.log('wokring');
+    var box = btn.parentNode;
+    box.parentNode.removeChild(box);
+  }
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZIGZAG GRID</title>
+  <style>
+    #parent{
+      display: grid;
+      grid-template-columns: repeat(4,100px);
+      grid-template-rows: repeat(4,100px);
+      grid-template-areas: 
+      "a b b c"
+      "d d e f"
+      "g h i i";
+      gap: 10px;
+    }
+    #parent>div{
+      background-color: #008d85;
+    }
+    .a{grid-area: a;}
+    .b{grid-area: b;}
+    .c{grid-area: c;}
+    .d{grid-area: d;}
+    .e{grid-area: e;}
+    .f{grid-area: f;}
+    .g{grid-area: g;}
+    .h{grid-area: h;}
+    .i{grid-area: i;}
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
+    <div class="h"></div>
+    <div class="i"></div>
+  </div>
+</body>
+</html>
